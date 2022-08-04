@@ -1,0 +1,360 @@
+@import url('https://home.flash.moe/discord/all.css');
+
+div[class^="scroller-"] {
+    overflow-x: hidden;
+}
+
+.guild,
+.guilds-error,
+.guild-inner,
+.guild-inner a,
+.friends-icon {
+    height: 30px !important;
+    line-height: 30px !important;
+    font-size: calc(30px / 2.5) !important;
+}
+
+.guilds-add-inner {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    font-size: 30px !important;
+}
+
+.header-1tSljs {
+    padding: 10px;
+    height: 40px;
+    padding-top: 11px;
+}
+
+.content-2mSKOj {
+    padding: 4px;
+    padding-right: 8px;
+    height: 26px;
+}
+
+.unread-23Kvxk {
+    margin-top: -7px;
+}
+
+.win-buttons {
+    height: 40px;
+}
+
+.guild .badge {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center;
+}
+
+.guilds-wrapper .guilds .guild.audio .guild-inner:after,
+.guilds-wrapper .guilds .guild.video .guild-inner:after {
+    height: 30px !important;
+    background-size: calc(30px/1.5) !important;
+    background-color: rgba(0, 0, 0, 0);
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+button,
+div[class*="button-"],
+.member,
+.guild,
+.channel,
+.avatar-large,
+.emoji-item {
+    transition: transform .1s !important;
+}
+
+button:hover,
+div[class*="button-"]:hover:not([class*="invite"]),
+.member:hover,
+.guild:hover,
+.channel:hover,
+.avatar-large:hover {
+    transform: scale(1.1,1.1);
+    opacity: 1 !important;
+}
+
+.emoji-item:hover {
+    transform: scale(1.5,1.5);
+}
+
+form {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    border-top-color: rgba(0,0,0,0) !important;
+}
+
+div[class^="channelTextArea"] {
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+div[class^="inner"] {
+}
+
+svg[class^="attachButton"],
+div[class^="attachButton"] {
+    display: none;
+}
+
+textarea {
+    padding-top: 3px !important;
+    padding-left: 8px !important;
+    padding-bottom: 2px !important;
+}
+
+div[class^="emojiButton"] {
+    top: 4px !important;
+    right: 4px !important;
+}
+
+div[class^="autocomplete"] {
+    z-index: 10000;
+}
+
+.typing {
+    top: -10px !important;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.typing .ellipsis {
+    display: none;
+}
+
+.typing .text {
+    width: 100%;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.message-group {
+    border-bottom-color: rgba(0,0,0,0) !important;
+}
+
+.new-messages-bar,
+.jump-to-present-bar button:first-child,
+.message-group-blocked {
+    display: none !important;
+}
+
+.jump-to-present-bar button:last-child {
+    width: 100%;
+    text-align: center;
+}
+
+/*
+.badge,
+div[class^="inner"],
+div[class^="avatarDefault-"],
+div[class^="avatarSpeaking-"],
+.guilds-error,
+div[class^="contentSelectedText-"],
+div[class^="contentHoveredText-"],
+.guild-inner, 
+.guilds-wrapper .guilds .guild-placeholder,
+.guilds-add,
+.avatar-small */
+.sizeDefault-rZbSBU:after,
+* {
+    border-radius: 0% !important;
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.avatar-small .status.status-typing {
+    border-style: hidden !important;
+    animation: flickerAnimation 1s infinite;
+}
+
+.avatar-small .status {
+    border-style: hidden !important;
+    left: -4px !important;
+    width: 4px !important;
+    height: 100% !important;
+    top: 0px !important;
+}
+
+.avatar-small:not(.guild-inner > .avatar-small) {
+    margin-left: 4px !important;
+}
+
+.edit-container-inner {
+    margin-left: 70px;
+}
+
+.edit-message .edit-container-outer .avatar-large,
+.spinner,
+.protip,
+section .friends-online /*,
+.divider,
+.divider span,
+/*.welcome-message > **/ {
+    display: none !important;
+}
+
+.divider span {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+/*
+.callout-backdrop {
+	opacity: 0 !important;
+}
+*/
+
+.bot-tag {
+    visibility: hidden;
+    margin-left: 2px;
+}
+
+.bot-tag:before {
+    visibility: visible;
+    content: "⚙️";
+    font-size: 15px;
+}
+
+.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece,
+.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    border-color: rgba(0,0,0,0) !important;
+    border-radius: 0px;
+}
+
+.scroller-fzNley::-webkit-scrollbar-thumb,
+.scroller-fzNley::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+.accountDetails-15i-_e .username {
+    max-width: 58px;
+}
+
+header,
+div[class*="header"] {
+    background-image: none;
+}
+
+
+.guild.unread:not(.selected):before {
+    height: 100% !important;
+    width: 5px !important;
+    top: 0px !important;
+    left: -4px !important;
+    margin: 0 !important;
+    padding: 0px 0px;
+    border-radius: 0 !important;
+}
+
+/* bg stuff */
+
+.container-iksrDt:before {
+    display: none;
+}
+
+.header-1tSljs,
+.title-wrap,
+.has-divider {
+    border: none !important;
+}
+
+.divider * {
+	display: none !important;
+}
+
+/*section,
+.app-mount,*/
+/*ST*/
+/*
+body,
+
+.modal-2LIEKY,
+.modal-2LIEKY > div,
+.inner-1_1f7b,
+.modal-3HOjGZ,
+.modal-3HOjGZ > div,
+.backdrop-2ohBEd,
+
+.popout > .userPopout-4pfA0d > div {*/
+    /*background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-157915.jpg") !important;*/
+	/*background-color: #1b102d !important;*/
+	/*background-color: rgba(27,16,45,255) !important;
+    background-size: cover !important;
+}
+
+.barFill-18ABna,
+.valueChecked-3Bzkbm {
+	background-color: rgba(89, 54, 149,255) !important;
+}
+ 
+.mask-2vyqAW {
+	mask: none !important;
+}
+*/
+/*EN*/
+ 
+/*
+section .guilds-wrapper,
+section .channels-wrap,
+section .chat,
+section .chat > .content,
+section .chat > .content > .flex-vertical,
+section .chat > .content > .flex-vertical > .messages-wrapper,
+section .chat > .content > .channel-members-wrap .channel-members,
+section #friends,
+section #friends > .friends-header,
+section #friends > .friends-table,
+.ui-standard-sidebar-view > .sidebar-region,
+.ui-standard-sidebar-view > .content-region, 
+*/
+
+/*ST*/
+/*
+:not(body):not(.status):not(.bar-2cFRGz):not(.barFill-18ABna):not(.switch-3lyafC) {
+    background-color: rgba(0,0,0,0) !important;
+*/
+/*EN*/
+
+/*
+section > .channels-wrap > .flex-lFgbSz,
+section > .channels-wrap > .private-channels,
+section > .channels-wrap > .scrollerWrap-2uBjct,
+section > .channels-wrap > .container-iksrDt {
+    background-color: rgba(47,49,54,0) !important;
+}
+
+section > .channels-wrap > .flex-lFgbSz > .flexChild-1KGW5q,
+section > .channels-wrap > .private-channels > .search-bar,
+section > .chat > .title-wrap,
+section > .friends > .friends-header {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.markup > pre,
+.markup > pre > code,
+.markup > code,
+.channel-text-area-default {
+    color: hsla(0,0%,100%,.7) !important;
+	background-color: hsla(0,0%,100%,.05) !important;
+}
+*/
